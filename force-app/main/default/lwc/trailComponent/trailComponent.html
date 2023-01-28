@@ -1,0 +1,7 @@
+<template>
+    <div class="slds-card">
+    <template for:each={wiredRecords.data} for:item="Record" >
+        <p key={Record.Id} >{Record.Name} ,{Record.Type_OF_Products__c}, {Record.ProductCode} </p>
+    </template>
+</div> 
+</template>

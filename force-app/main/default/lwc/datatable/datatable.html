@@ -1,0 +1,13 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="ProdutsList">
+        <lightning-input type="text" label ="search products" onkeyup={Changehandler}></lightning-input>
+        <div class="slds-var-m-around_medium">
+        <lightning-datatable  
+           key-field= "id"
+           data={Productdetails.data}
+           columns={Cols}>
+</lightning-datatable>
+     </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Electricals" class="slds-var-m-around_small" >
+            
+        <lightning-carousel>
+           <lightning-carousel-image 
+            src ='https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_960_720.jpg'
+            header="Desktops"></lightning-carousel-image>
+        <!-- headers are shown below the image -->
+            <lightning-carousel-image  
+            src = 'https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/K/6K9C3PA-1_T1656565304.png'
+            header="Laptops"></lightning-carousel-image>
+        
+            <lightning-carousel-image
+            src = 'https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/71AahM175iL._AC_SL1500_.jpg'
+            header="Printers"></lightning-carousel-image>
+        
+            <lightning-carousel-image 
+            src = 'https://assets.thehansindia.com/h-upload/2022/04/30/1600x960_1289668-mobiles-11.jpg'
+            header="Mobiles"></lightning-carousel-image>
+            <lightning-carousel-image 
+            src = 'https://m.media-amazon.com/images/I/51RriyrPvDL._SL1446_.jpg'
+            header="Head phones"></lightning-carousel-image><br/><br/>
+
+    </lightning-carousel><br/>
+    <lightning-button   label="Choose the Products" variant="Neutral" onclick={OnChangehandler1}></lightning-button>
+        
+    </lightning-card>
+</template>
