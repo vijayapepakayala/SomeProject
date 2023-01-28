@@ -1,7 +1,11 @@
 <template>
     <div class="slds-card">
     <template for:each={wiredRecords.data} for:item="Record" >
-        <p key={Record.Id} >{Record.Name} ,{Record.Type_OF_Products__c}, {Record.ProductCode} </p>
+        <c-trail-child-component key={Record.Id}
+            child-record={Record}
+        >
+        </c-trail-child-component>
+        <!-- child component is used instead <p>{Record.Name} ,{Record.Type_OF_Products__c}, {Record.ProductCode} ok</p> -->
     </template>
 </div> 
 </template>
