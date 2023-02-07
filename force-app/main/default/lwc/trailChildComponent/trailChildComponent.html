@@ -1,5 +1,7 @@
 <template>
     <div class="slds-box slds-box_x-small">
-        <p>{childRecord.Name} ,{childRecord.Type_OF_Products__c}, {childRecord.ProductCode} </p>
+        <a onclick={handleOnClick}>
+            <p>{childRecord.Name} ,{childRecord.Type_OF_Products__c}, {childRecord.ProductCode} </p>  
+        </a>
     </div>
 </template>

@@ -1,0 +1,19 @@
+<template>
+    <template if:true={products.data}>
+        <template for:each={products.data} for:item="product">
+            <lightning-card title={product.Name}>
+                <p class="slds-p-horizontal_small" key = {product.id}></p>
+                <p class="slds-p-horizontal_small">{product.Description__c}</p>
+                <p class="slds-p-horizontal_small">${product.Price__c}</p>
+                <lightning-button
+                    label="Add to Cart"
+                    variant="brand"
+                    onclick={addToCart}
+                    data-product-id={product.Id}
+                ></lightning-button>
+            </lightning-card>
+        </template>
+    </template>
+</template>
+
+
