@@ -32,7 +32,7 @@ export default class Cart extends LightningElement {
         }
     }
 
-    addToCart(event){
+    addToCart(){
         // Get the product id from the event
         const productId = event.currentTarget.dataset.productId;
 
@@ -40,7 +40,7 @@ export default class Cart extends LightningElement {
 
         // Show a notification that the product was added to the cart
         const event = new CustomEvent('productadded', {
-            detail: { productId }
+            detail: productId 
         });
         this.dispatchEvent(event);
     }
