@@ -2,7 +2,7 @@ import { LightningElement } from 'lwc';
 import { NavigationMixin} from 'lightning/navigation';
 export default class Products2 extends NavigationMixin (LightningElement){
   
-    Select_product = 'electrical Stove'
+   /* Select_product = 'electrical Stove'
     OnchangeHandler(event){
      this.Select_product = event.target.value
      this[NavigationMixin.Navigate]({
@@ -13,5 +13,5 @@ export default class Products2 extends NavigationMixin (LightningElement){
                  url:'https://oscaritsolutions-fe-dev-ed.develop.lightning.force.com/lightning/r/Product2/01t2w00000DGCEaAAP/view'
              }
          })
-  }
+  }*/
  }

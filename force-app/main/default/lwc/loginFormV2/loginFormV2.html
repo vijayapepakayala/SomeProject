@@ -1,0 +1,20 @@
+<template>
+    <form class="slds-form">
+      <div class="slds-form-element">
+        <label class="slds-form-element__label" for="username">Username</label>
+        <div class="slds-form-element__control">
+          <input type="text" id="username" class="slds-input" />
+        </div>
+      </div>
+      <div class="slds-form-element">
+        <label class="slds-form-element__label" for="password">password</label>
+        <div class="slds-form-element__control">
+          <input type="text" id = "password" class="slds-input" />
+        </div>
+      </div>
+      
+      <div class="slds-form-element">
+        <lightning-button class="slds-button slds-button_brand" onclick={handleLogin}>Login</lightning-button>
+      </div>
+    </form>
+</template>

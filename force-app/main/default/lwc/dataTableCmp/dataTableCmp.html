@@ -1,0 +1,10 @@
+<template>
+    <lightning-card >
+        <lightning-button label="Get Accounts" variant="brand" onclick={handleClick}></lightning-button>
+    </lightning-card>
+    <lightning-datatable
+    key-field="id"
+    data={acclist}
+    columns={columns}>
+</lightning-datatable>
+</template>
